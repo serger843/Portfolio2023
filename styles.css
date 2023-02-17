@@ -384,3 +384,17 @@ ul li {
 .portcolor {
   color: #4caf50;
 }
+.pregallery-cont {
+  display: flex;
+  justify-content: center;
+  /* background-color: red; */
+}
+.pregallery-item {
+  /* background-color: blue; */
+  margin: 25px;
+  padding: 10px;
+}
+.box {
+  background-color: #4caf50;
+  padding: 5px;
+}
