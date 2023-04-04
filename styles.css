@@ -1,0 +1,400 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* body {
+
+} */
+
+/* cta section */
+.cta-img {
+  width: 100%;
+  height: 50%;
+  opacity: 0.9;
+  position: relative;
+}
+.cta-para {
+  font-size: 30px;
+  color: rgb(2, 31, 39);
+}
+
+#sous-sp {
+  color: rgb(5, 35, 45);
+}
+
+.cta-span {
+  font-size: 70px;
+  color: #5a5c5e;
+}
+.top-left {
+  position: absolute;
+  bottom: 150px;
+  left: 100px;
+}
+
+/* header section */
+.main-header {
+  background-color: #f8f9fa;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.list-nav {
+  margin: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 35px;
+}
+a:link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+a:visited {
+  color: gray;
+}
+
+a:hover {
+  color: green;
+}
+
+a:active {
+  color: orange;
+}
+
+#breakfast {
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid #d3c8c8d4;
+  margin-top: -35px;
+}
+
+/* about section */
+.about_container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 50px 0;
+  gap: 1px;
+  background-color: #d3c8c8d4;
+}
+.grid-item {
+  background-color: #ffffff;
+  padding: 50px;
+  box-shadow: inset 0 -10px 10px -10px rgba(0, 0, 0, 0.5);
+}
+.about_heading {
+  margin-bottom: 8px;
+  font-size: 30px;
+}
+.all_lines {
+  width: 40px;
+}
+
+.about_text {
+  margin-top: 8px;
+}
+.added_para {
+  font-size: 20px;
+  margin-top: 8px;
+}
+.download {
+  width: 220px;
+  border-radius: 5px;
+  height: 50px;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #d3c8c8d4;
+  box-shadow: 10px 10px 5px 3px;
+}
+ul li {
+  list-style: none;
+}
+.icons {
+  margin-top: 30px;
+}
+.icm {
+  margin: 8px;
+}
+
+/* Resume section */
+.resume_flexcont {
+  display: flex;
+  /* background-color: blue; */
+  width: 1100px;
+  margin-left: 65px;
+  margin-bottom: 70px;
+}
+
+.resume_flexcont > div {
+  /* width: 200px; */
+  /* background-color: orangered; */
+  margin: 10px;
+  padding: 60px;
+}
+.resume-heading {
+  margin-left: 64px;
+  margin-bottom: 16px;
+}
+.resume-title {
+  font-size: 20px;
+  /* margin-bottom: 30px; */
+}
+.resume-para {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.resume-para2 {
+  margin: 8px 0;
+}
+.line-resume-para {
+  margin: 16px 0;
+}
+
+/* skill prograss bar */
+.skill-line {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.skill-value {
+  background-color: #ddd;
+  height: 10px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.skill-value::before {
+  content: "";
+  display: block;
+  background-color: #4caf50;
+
+  /* background-color: rgb(222, 56, 56); */
+  /* color: rgb(222, 56, 56); */
+
+  height: 100%;
+  width: calc(var(--skill-value) * 2px);
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Change the skill-value custom property for each skill */
+.skill:nth-of-type(1) .skill-value::before {
+  --skill-value: 50;
+}
+
+.skill:nth-of-type(2) .skill-value::before {
+  --skill-value: 90;
+}
+
+.skill:nth-of-type(3) .skill-value::before {
+  --skill-value: 50;
+}
+
+/* languages */
+
+.language-para {
+  margin-top: 50px;
+  font-size: 18px;
+}
+.skill-linelang {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.lastpara-skill {
+  margin-top: 25px;
+}
+
+.lastpara-skillline {
+  margin-top: 40px;
+}
+
+/* middle section */
+.middle-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2d333a;
+  height: 250px;
+  margin-bottom: 50px;
+}
+.facts {
+  /* background-color: #f1f1f1; */
+  width: 200px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.numbers {
+  font-size: 50px;
+  /* color: rgb(222, 56, 56); */
+  color: #4caf50;
+  font-size: 60px;
+  border-left: 1px solid #ddd;
+}
+.facts-text {
+  color: #ddd;
+}
+
+/* Services section */
+.services-title {
+  margin: 20px;
+}
+.sp-services {
+  color: #4caf50;
+}
+
+.services-container1 {
+  display: flex;
+  flex-wrap: nowrap;
+  /* background-color: #f8f9fa; */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 600px; */
+}
+.services-items1 {
+  width: 500px;
+  margin: 20px;
+  /* background-color: #4caf50; */
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.services-container2 {
+  display: flex;
+  flex-wrap: nowrap;
+  /* background-color: red; */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 600px; */
+  margin-bottom: 50px;
+}
+
+.services-items2 {
+  width: 500px;
+  margin: 20px;
+  /* background-color: blue; */
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Packs pricing section */
+.packspricing-title {
+  margin: 20px;
+  font-size: 40px;
+}
+.packspricing-container {
+  display: flex;
+  /* width: 1000px; */
+  flex-wrap: nowrap;
+  /* background-color: red; */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.packspricing-items {
+  width: 250px;
+  height: 350px;
+  margin: 20px;
+  /* background-color: blue; */
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+.packs-plan {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.prices {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.dollar {
+  font-size: 25px;
+}
+.month {
+  font-size: 20px;
+}
+.detail {
+  line-height: 2;
+}
+.colrs {
+  color: #4caf50;
+}
+.sub {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+/* Middle section bottom */
+.middlesection-bottom {
+  display: flex;
+  background-color: #2d333a;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin-bottom: 50px;
+}
+.middsecbot-item {
+  /* background-color: red; */
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #f8f9fa;
+}
+.btn-middsb {
+  padding: 10px 40px;
+  margin: 30px 120px;
+  color: #f8f9fa;
+  background-color: #4caf50;
+  border-radius: 5px;
+}
+
+/* Portfolio Section */
+.portcolor {
+  color: #4caf50;
+}
+.pregallery-cont {
+  display: flex;
+  justify-content: center;
+  /* background-color: red; */
+}
+.pregallery-item {
+  /* background-color: blue; */
+  margin: 25px;
+  padding: 10px;
+}
+.box {
+  background-color: #4caf50;
+  padding: 5px;
+}
